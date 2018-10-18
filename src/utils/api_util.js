@@ -1,9 +1,14 @@
 import axios from 'axios';
-import * as apiKey from '../keys/api_key';
+import apiKey from '../keys/api_key';
 
-console.log(apiKey)
+console.log(apiKey.giphKey)
 
-export const fetchGiphs = (query) => {
-  console.log(apiKey);
-  // return axios.get('http://api.giphy.com/v1/gifs/search')
+export const apiFetchGifs = (query) => {
+  return axios.get('http://api.giphy.com/v1/gifs/search', {
+    params: {
+      api_key: `${apiKey.giphKey}`,
+      q: query,
+      limit: 50,
+    }
+  });
 }
