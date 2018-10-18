@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Giphy-api
+
+App that employs giphy's api to allow users to search for trending giphy giphs 
+
+Axios requests are used to make asynchronous request to the giphy api.
+
+React-Redux application 
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
